@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        img.full-width-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Grid Layout for Cards */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            margin: 15px 0 10px;
+            text-align: center;
+        }
+
+        .card p {
+            padding: 0 15px 15px;
+            text-align: center;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Additional Features */
+        /* Button Style */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Call-to-Action Section */
+        #environmental-benefits {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        #environmental-benefits h2 {
+            color: #388e3c;
+            text-align: center;
+        }
+
+        #environmental-benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #environmental-benefits li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌳 The Importance of Trees 🌳</h1>
+        <nav>
+          <ul>
+            <li><a href="#benefits">Benefits of Trees</a></li>
+            <li><a href="#types">Types of Trees</a></li>
+            
+          
+            <li><a href="https://www.arborday.org/" target="_blank">Arbor Day Foundation</a></li>
+            <li><a href="https://www.treehugger.com/" target="_blank">Treehugger</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+      <main>
+        <section id="intro">
+          <h2>Why Trees Matter</h2>
+          <p>Trees are vital to our planet. They provide oxygen, improve air quality
+            , conserve water, and support wildlife. Without trees,
+             life on Earth would not be possible
+             Trees are often called the lungs of our planet, and for good reason. Beyond producing oxygen, their importance lies in their remarkable ability to combat climate change and support ecosystems
+             . Trees play a vital role in the environment by improving air quality, reducing pollution, and providing
+              essential habitats for wildlife. Their benefits are vast, making trees indispensable for maintaining 
+              ecological balance and sustaining life on Earth.Forests are of immense importance in soil stabilization and erosion control, especially in mountainous and hilly regions; they also protect and conserve water supplies and prevent floods. Small groups of trees and even single trees have a similar role locally in preventing washouts and in holding stream banks. As mentioned above, trees contribute significantly to nutrient recycling, carbon dioxide absorption, and oxygen generation.
+    
+              Economic importance
+              Of all the products that come from trees, those that are wood-based are by far of the greatest importance (see wood). Carbonized and fossilized wood (coal) supplies fuel for energy needs; other fossilized products of trees include amber, which is formed from the gum of pines, and kauri gum. From earliest times wood has been employed for such items as homes, rafts, canoes, fuel, and weapons.
+              
+              Primitive peoples were dependent on trees for many materials in addition to wood. Fruits and nuts of many kinds were important foods for both humans and animals. Leaves of palms and other trees were used for thatching roofs. Cloth and woven fabrics made from bark, leaves, and other tree parts were used for clothing. Utensils were fashioned from calabashes, coconuts, and other fruits. Medicines, including quinine, were obtained from trees, as were dyes, tanning materials, and spices.
+              
+              Modern civilizations are no less dependent on trees. Although substitutes now are commonly used for some tree products, the demand for trees remains strong, as in the manufacture of newsprint and other papers, as well as cardboard and similar packagings. The plywood industry converts immense numbers of trees into building materials..</p>
+          <img src="https://tse1.mm.bing.net/th?id=OIP.K9al8N_kNqnvi9YoRLC8-gHaDt&pid=Api&P=0&h=180" alt="Forest Image" class="full-width-img">
+        </section>
+    
+        <section id="benefits">
+          <h2>Benefits of Trees</h2>
+          <div class="grid-container">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1470246973918-29a93221c455?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Oxygen Production">
+              <h3>Oxygen Production</h3>
+              <p>Trees produce oxygen through photosynthesis, which is essential for all living beings.</p>
+            </div>
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Air Quality">
+              <h3>Air Quality</h3>
+              <p>Trees absorb pollutants like carbon dioxide and release clean air, improving overall air quality.</p>
+            </div>
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Wildlife Habitat">
+              <h3>Wildlife Habitat</h3>
+              <p>Trees provide shelter and food for countless species, supporting biodiversity.</p>
+            </div>
+          </div>
+        </section>
+    
+        <section id="types">
+          <h2>Types of Trees</h2>
+          <div class="grid-container">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Oak Tree">
+              <h3>Oak Trees</h3>
+              <p>Oak trees are known for their strength and longevity, often living for hundreds of years.</p>
+            </div>
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Maple Tree">
+              <h3>Maple Trees</h3>
+              <p>Maple trees are famous for their vibrant fall colors and delicious maple syrup.</p>
+            </div>
+            <div class="card">
+                <section id="environmental-benefits">
+                    <h2>Environmental Benefits of Trees</h2>
+                    <ul>
+                      <li><strong>Air Quality Improvement:</strong> Trees absorb carbon dioxide and release oxygen, filtering harmful pollutants.</li>
+                      <li><strong>Climate Regulation:</strong> They sequester carbon and moderate temperatures.</li>
+                      <li><strong>Water Conservation:</strong> Tree roots prevent soil erosion and help regulate the water cycle.</li>
+                      <li><strong>Biodiversity Support:</strong> Trees provide habitat for wildlife and contribute to ecosystem balance.</li>
+                      <li><strong>Soil Health:</strong> They enrich the soil and promote beneficial microbial activity.</li>
+                      <li><strong>Aesthetic and Recreational Value:</strong> Trees enhance landscapes and provide spaces for recreation.</li>
+                    </ul>
+                  
+                </main>
+            
+                <footer>
+                    <p>&copy; <strong>project created by aman kumar</strong></p>
+                </footer>
+                  
+</body>
