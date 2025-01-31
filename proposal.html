@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samya, Will You Be Mine?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            overflow: hidden;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s;
+        }
+        h1 {
+            color: #ff4d6d;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+        .yes:hover {
+            background-color: #e63e5a;
+        }
+        .no {
+            background-color: gray;
+            color: white;
+            position: absolute;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .heart {
+            position: absolute;
+            color: red;
+            font-size: 24px;
+            animation: float 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Samya Ali, Will You Be Mine Forever? ❤️</h1>
+        <div class="buttons">
+            <button class="btn yes" onclick="showLove()">Yes 💖</button>
+            <button class="btn no" onmouseover="moveButton(this)">No 😢</button>
+        </div>
+    </div>
+    
+    <script>
+        function showLove() {
+            alert("Yay! Samya, you made me the happiest person alive! ❤️🎉");
+            createHearts();
+        }
+        function moveButton(btn) {
+            const x = Math.random() * (window.innerWidth - btn.clientWidth);
+            const y = Math.random() * (window.innerHeight - btn.clientHeight);
+            btn.style.left = x + "px";
+            btn.style.top = y + "px";
+        }
+        function createHearts() {
+            for (let i = 0; i < 50; i++) {
+                let heart = document.createElement("div");
+                heart.innerHTML = "❤️";
+                heart.classList.add("heart");
+                document.body.appendChild(heart);
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.top = Math.random() * 100 + "vh";
+                heart.style.animationDuration = Math.random() * 2 + 2 + "s";
+            }
+        }
+    </script>
+</body>
+</html>
